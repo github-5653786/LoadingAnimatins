@@ -34,7 +34,7 @@ export class MyService {
       })
     }
 
-    let _url = "http://demo4690221.mockable.io/getPlayersHistory";
+    let _url = "https://demo4690221.mockable.io/getPlayersHistory";
     return this.http.get(_url, headerOptions);
   }
 }
