@@ -1,0 +1,45 @@
+<div class="container">
+    <h3 class="text-center pt-5">Registration Form</h3>
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+            <form #formName="ngForm" (ngSubmit)="formName.form.valid && SubmitForm(formName.value)" AutoFucusOnError>
+                <div class="form-group">
+                    <label for="username">Enter UserName</label>
+                    <input type="text" class="form-control" Autofocusnextinput="password" autocomplete="off"
+                        id="username" placeholder="Userame" [(ngModel)]="username" #users="ngModel" name="user"
+                        minlength="10" maxlength="10" required>
+                    <span class="text-danger" *ngIf="users.errors && (users.touched || formName.submitted)">
+                        <span *ngIf="users.errors.required">Userame Required</span>
+                        <span *ngIf="users.errors.minlength || users.errors.maxlength">please enter
+                            {{users.errors.minlength.requiredLength - username?.length}} character's</span>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Enter Password</label>
+                    <input type="password" class="form-control" Autofocusnextinput="FocusToNextField" autocomplete="off"
+                        placeholder="Password" id="password" [(ngModel)]="password" name="password" #passwords="ngModel"
+                        minlength="3" maxlength="3" required>
+                    <span class="text-danger" *ngIf="passwords.errors && (passwords.touched || formName.submitted)">
+                        <span *ngIf="passwords.errors.required">Password Required</span>
+                        <span *ngIf="passwords.errors.minlength || passwords.errors.maxlength">please enter
+                            {{passwords.errors.minlength.requiredLength - password?.length}} character's</span>
+                    </span>
+                </div>
+                <input type="submit" value="Register" class="btn btn-primary"> &nbsp;&nbsp;
+                <a class="btn text-warning" [routerLink]="['/login']">Login</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<ng-container *ngIf="LoaderGif">
+    <div class="loader-container">
+        <img class="laoder-img" height="40"
+            src="https://pa1.narvii.com/6946/45af84577218bf2276327692c00ab7d7a9e77715r1-564-376_hq.gif" width="50">
+    </div>
+</ng-container>
+
+<ng-container *ngIf="loaderComponent">
+    <app-loader></app-loader>
+</ng-container>

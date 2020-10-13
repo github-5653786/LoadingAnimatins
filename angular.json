@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CompleateLoginApp"
+    }
+  },
+  "defaultProject": "CompleateLoginApp",
+  "cli": {
+    "analytics": false
+  }
 }
