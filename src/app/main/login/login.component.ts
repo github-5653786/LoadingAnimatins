@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     this.LoadingBoxes = true;
     setTimeout(() => {
       this.LoadingBoxes = false;
-    }, 1000);
+    }, 5000);
   }
 
 

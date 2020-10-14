@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
     this.loaderComponent = true;
     setTimeout(() => {
       this.loaderComponent = false;
-    }, 2000);
+    }, 5000);
   }
 
   SubmitForm(val) {

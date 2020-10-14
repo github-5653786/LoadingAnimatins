@@ -1,5 +1,6 @@
 <div class="container">
-    <h3 class="text-center">Player's brief Information</h3>
+    <h3 class="text-center mt-4">Player's brief Information</h3>
+    <button class="btn btn-warning" style="float: right;">LogOut</button>
     <input type="text" name="serarch" id="name" class="form-control" [(ngModel)]="playername"
         placeholder="Filter Player">
     <table class="table table-hover table-bordered text-center">
@@ -43,7 +44,7 @@
 </ng-container>
 
 
-<div class="loadingBox" *ngIf="playername?.length == 1">
+<div class="loadingBox" *ngIf="playername?.length == 1 && !isMobileView">
     <ul>
         <li class="LoadignDots">
             .............................................................................................................................................................................................................................................................................................

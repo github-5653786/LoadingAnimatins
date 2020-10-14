@@ -14,7 +14,7 @@ import { AgePipe } from './Directive-Pipe/age.pipe';
 import { FilterPlayersPipe } from './Directive-Pipe/filter-players.pipe';
 import { LoaderComponent } from './loader/loader.component';
 const route: Routes = [
-  { path: '', redirectTo: 'register', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'players', component: PlayersComponent },

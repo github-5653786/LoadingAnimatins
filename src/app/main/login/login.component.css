@@ -78,3 +78,9 @@
         background-position: 400px 0;
     }
 }
+
+@media only screen and (max-width:768px) {
+    .BoxColumns {
+        width: 90%;
+    }
+}

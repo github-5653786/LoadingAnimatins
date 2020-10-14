@@ -162,7 +162,7 @@
 
     /* 3 loading circle */
 
-    .loading-wrapper {
+    /* .loading-wrapper {
         position: fixed;
         background: #FFF;
         width: 100%;
@@ -209,6 +209,115 @@
         right: 15px;
         bottom: 15px;
         animation: spin 1.5s linear infinite;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    } */
+
+    /* 5 circle loading */
+
+    .loader-container {
+        position: fixed;
+        background: #FFF;
+        width: 100%;
+        top: 0;
+        z-index: 1000000;
+        height: 100%;
+        opacity: 0.9;
+    }
+
+    .spin1 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: red;
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin2 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: blue;
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        top: 48%;
+        left: 47%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin3 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: lightgreen;
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        top: 53%;
+        left: 53%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin4 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: indigo;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 61%;
+        left: 60%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin5 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: turquoise;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 71%;
+        left: 71%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin6 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: orange;
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 86%;
+        left: 86%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
+    }
+
+    .spin7 {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: green;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 110%;
+        left: 110%;
+        margin: -75px 0 0 -75px;
+        animation: spin 4s linear infinite;
     }
 
     @keyframes spin {
